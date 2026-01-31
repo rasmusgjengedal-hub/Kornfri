@@ -1,0 +1,575 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: #f8f9fa;
+}
+
+
+/* =========================
+   Navigation Bar
+========================= */
+.navigation {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: relative; /* needed for absolute mobile menu */
+}
+
+.nav-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.nav-left img {
+    height: 40px;
+}
+
+.nav-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.nav-right {
+    flex: 1;
+}
+
+/* Navigation links */
+.navigation a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    margin: 0 20px;
+    padding: 30px;
+    border-radius: 20px;
+    transition: 0.15s;
+}
+
+.navigation a:hover {
+    border-radius: 20px;
+    font-weight: 600;
+    scale: 1.1;
+    background-color: rgba(200, 200, 200, 0.4);
+}
+
+/* =========================
+   Hamburger Button (Mobile)
+========================= */
+.hamburger {
+    display: none; /* hidden by default */
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+        z-index: 1000;
+
+}
+
+/* =========================
+   Responsive Mobile Styles
+========================= */
+@media (max-width: 768px) {
+    /* Hide nav links initially */
+    .nav-center {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 120px; /* navbar height */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 15px 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        z-index: 100;
+        
+    }
+
+    /* Show nav links when active */
+    .nav-center.active {
+        display: flex;
+    }
+
+    /* Show hamburger button */
+    .hamburger {
+        display: block;
+        flex: 0;
+        margin-right: 20px;
+    }
+
+    /* Reduce padding of links for mobile */
+    .navigation a {
+        margin: 5px 0;
+        padding: 10px 15px;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+/* =========================
+   Footer
+========================= */
+.site-footer {
+    background-color: rgb(34, 34, 34, 0.94);
+    color: #eee;
+    padding: 60px 10% 20px;
+    font-size: 1rem;
+    margin-top: 4rem;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-brand img {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-links h4 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-links a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.25s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-socials h4 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-socials p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    transition: opacity 0.25s ease;
+}
+
+.instagram-link img {
+    width: 30px;
+    height: 30px;
+}
+
+.instagram-link:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   Main
+========================= */
+/* =========================
+   Main / Ingredient Cards
+========================= */
+
+/* Sticky Menu */
+.sticky-menu {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.sticky-menu .menu-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sticky-menu h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .menu-links, .sticky-menu {
+        display: none; /* hides the menu completely on phones */
+    }
+}
+
+.menu-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-links li a:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-links li a.active {
+    background-color: #111;
+    color: #fff;
+}
+
+/* Ingredient Cards */
+.ingredient-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    transition: all 0.3s ease;
+    scroll-margin-top: 120px; /* juster offset til sticky menu */
+    margin-bottom: 2rem;
+}
+
+.ingredient-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+}
+
+/* Card Image */
+.card-image {
+    position: relative;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.ingredient-card:hover .card-image img {
+    transform: scale(1.08);
+}
+
+/* Card Content */
+.card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h2 {
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+/* Tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: #e9ecef;
+    color: #495057;
+}
+
+/* Tag farver */
+.tag-binder { background: #d1ecf1; color: #0c5460; }
+.tag-fiber { background: #d4edda; color: #155724; }
+.tag-stabilizer { background: #fff3cd; color: #856404; }
+.tag-flour { background: #f8d7da; color: #721c24; }
+.tag-neutral { background: #e2e3e5; color: #383d41; }
+.tag-protein { background: #cce5ff; color: #004085; }
+.tag-flavor { background: #e7d4f5; color: #5a1c7d; }
+.tag-texture { background: #ffe5b4; color: #856404; }
+.tag-low-carb { background: #d4f4dd; color: #0f5132; }
+
+/* Card Preview */
+.card-preview {
+    margin-bottom: 1.5rem;
+}
+
+.card-preview p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Card Details (Accordion) */
+.card-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+.card-details.expanded {
+    max-height: 3000px; /* stor nok til alt indhold */
+    opacity: 1;
+}
+
+.card-details h3 {
+    font-size: 1.4rem;
+    color: #111;
+    margin: 1.5rem 0 0.75rem;
+    font-weight: 600;
+}
+
+.card-details p,
+.card-details li {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+.card-details ul {
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+/* Tip Box */
+.tip-box {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffe5b4 100%);
+    border-left: 4px solid #ffc107;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.tip-icon {
+    font-size: 1.5rem;
+    cursor: help;
+    position: relative;
+    flex-shrink: 0;
+}
+
+/* Tooltip */
+.tip-icon[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-8px);
+    background: #111;
+    color: #fff;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    white-space: normal;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 100;
+}
+
+.tip-icon[data-tooltip]:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-12px);
+}
+
+.tip-box strong {
+    color: #856404;
+}
+
+/* Expand Button */
+.expand-btn {
+    align-self: flex-start;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.expand-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.expand-btn.expanded {
+    background: #666;
+}
+
+.expand-btn::after {
+    content: " ▼";
+}
+
+.expand-btn.expanded::after {
+    content: " ▲";
+}
+
+
+.page-header h1{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+  margin: 2rem auto 2rem;
+  max-width: 800px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  position: relative;
+  padding: 20px;
+}
+
+/* Decorative underline */
+.page-header h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #f5a623 0%, #d88f1c 100%);
+  border-radius: 2px;
+}
+.page-header p {
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 20px;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 968px) {
+    .ingredient-card {
+        grid-template-columns: 1fr;
+    }
+
+    .card-image {
+        height: 250px;
+    }
+
+    .menu-links {
+        gap: 0.5rem;
+    }
+
+    .menu-links li a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sticky-menu {
+        padding: 0.75rem 1rem;
+    }
+
+    .menu-content h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .menu-links li a {
+        display: block;
+        text-align: center;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ingredients-container {
+        padding: 0 1rem;
+    }
+
+    .card-image {
+        height: 200px;
+    }
+
+    .card-content h2 {
+        font-size: 1.5rem;
+    }
+}

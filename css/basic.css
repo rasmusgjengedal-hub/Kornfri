@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: #f8f9fa;
+}
+
+
+/* =========================
+   Navigation Bar
+========================= */
+.navigation {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: relative; /* needed for absolute mobile menu */
+}
+
+.nav-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.nav-left img {
+    height: 40px;
+}
+
+.nav-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.nav-right {
+    flex: 1;
+}
+
+/* Navigation links */
+.navigation a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    margin: 0 20px;
+    padding: 30px;
+    border-radius: 20px;
+    transition: 0.15s;
+}
+
+.navigation a:hover {
+    border-radius: 20px;
+    font-weight: 600;
+    scale: 1.1;
+    background-color: rgba(200, 200, 200, 0.4);
+}
+
+/* =========================
+   Hamburger Button (Mobile)
+========================= */
+.hamburger {
+    display: none; /* hidden by default */
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* =========================
+   Responsive Mobile Styles
+========================= */
+@media (max-width: 768px) {
+    /* Hide nav links initially */
+    .nav-center {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 120px; /* navbar height */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 15px 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        z-index: 100;
+    }
+
+    /* Show nav links when active */
+    .nav-center.active {
+        display: flex;
+    }
+
+    /* Show hamburger button */
+    .hamburger {
+        display: block;
+        flex: 0;
+        margin-right: 20px;
+    }
+
+    /* Reduce padding of links for mobile */
+    .navigation a {
+        margin: 5px 0;
+        padding: 10px 15px;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+/* =========================
+   Footer
+========================= */
+.site-footer {
+    background-color: rgb(34, 34, 34, 0.94);
+    color: #eee;
+    padding: 60px 10% 20px;
+    font-size: 1rem;
+    margin-top: 4rem;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-brand img {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-links h4 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-links a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.25s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-socials h4 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-socials p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    transition: opacity 0.25s ease;
+}
+
+.instagram-link img {
+    width: 30px;
+    height: 30px;
+}
+
+.instagram-link:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   Category Filters
+========================= */
+#category-filters{
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#category-filters button {
+  margin: 0.2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #333;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+#category-filters button:hover {
+  background: #eee;
+  transform: translateY(-1px);
+}
+
+
+
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+  margin: 3rem auto 2rem;
+  max-width: 800px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+/* Decorative underline */
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #f5a623 0%, #d88f1c 100%);
+  border-radius: 2px;
+}
+
+
+
+/* =========================
+   Recipe List Page
+========================= */
+#recipes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(250px, 20%), 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.recipe-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px; /* Softer corners */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smoother transitions */
+  cursor: pointer; /* Shows it's clickable */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08); /* Subtle depth by default */
+}
+
+.recipe-card:hover {
+  transform: translateY(-4px); /* More noticeable lift */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12); /* Stronger shadow on hover */
+  border-color: #ccc; /* Subtle border change */
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px; /* Taller for better visual impact */
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Image zoom effect */
+}
+
+.recipe-card:hover img {
+  transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+.recipe-card h2 {
+  font-size: 1.4rem;
+  margin: 1rem 1rem 0.5rem; /* More breathing room */
+  color: #222; /* Darker for better contrast */
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.recipe-card p {
+  font-size: 0.95rem;
+  color: #666; /* Slightly lighter than original */
+  margin: 0 1rem 1rem; /* Bottom padding for card */
+  line-height: 1.5; /* Better readability */
+  text-decoration: none;
+}
+
+/* Optional: Add a category badge or tag styling */
+.recipe-card .category {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin: 0.75rem 0.40rem 0;
+  font-weight: 500;
+}
+.recipe-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Responsive: larger images on bigger screens */
+@media (min-width: 768px) {
+  .recipe-card img {
+    height: 220px;
+  }
+}
+
+
+
+
+
+
+
+/* =========================
+   Single Recipe Page
+========================= */
+#recipe-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px; /* Softer corners like recipe cards */
+  border: 1px solid #e5e5e5; /* Lighter border */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Subtle shadow for depth */
+}
+
+#recipe-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #222; /* Darker for better contrast */
+  line-height: 1.3;
+}
+
+#recipe-container p {
+  font-size: 1rem;
+  color: #666; /* Matches recipe card description color */
+  line-height: 1.6; /* Better readability */
+  margin-bottom: 1rem;
+}
+
+#recipe-container img {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Prevents images from being too tall */
+  object-fit: cover;
+  margin: 1.5rem 0;
+  border-radius: 12px; /* Matches container border-radius */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Subtle shadow on image */
+}
+
+#recipe-container h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+  color: #222;
+  font-weight: 600;
+  border-bottom: 2px solid #f0f0f0; /* Subtle separator */
+  padding-bottom: 0.5rem;
+}
+
+#recipe-container ul,
+#recipe-container ol {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0 1.5rem;
+  line-height: 1.8; /* More breathing room */
+}
+
+#recipe-container li {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* Optional: Style for category badges on detail page too */
+#recipe-container .categories-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#recipe-container .category {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+
+
+
+
+/* =========================
+   Responsive tweaks
+========================= */
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .recipe-card img {
+    height: 120px;
+  }
+
+  #recipe-container {
+    margin: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+/* =========================
+   Drop-down menu
+========================= */
+#category-filters {
+  text-align: center;
+  margin: 2rem 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 150px;
+}
+
+.filter-dropdown label {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+.filter-dropdown select {
+  padding: 0.6rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  text-align: left;
+}
+
+.filter-dropdown select:hover {
+  border-color: #999;
+}
+
+.filter-dropdown select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #category-filters {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .filter-dropdown {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+
