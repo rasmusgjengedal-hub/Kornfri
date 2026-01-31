@@ -35,7 +35,7 @@ const recipes = [
     id: "kanelsnurrer",
     title: "Kanelsnurrer",
     description: "Bløde og saftige glutenfri kanelsnurrer med klassisk remonce og masser af smag.",
-    image: "images/recipes/Kanelsnurre.jpg", // optional
+    image: "images/recipes/kanelsnurre.jpg", // optional
     tags: {
       type: ["Kage"],
       meal: ["Dessert"],
@@ -78,7 +78,7 @@ const recipes = [
   id: "sprød-nødde-granola",
   title: "Sprød nødde-granola",
   description: "Hjemmelavet sprød granola med mandler, pekannødder og kokos - let sødet med sirup og bagt i ovnen til perfekte klumper.",
-  image: "images/recipes/Granola.v1.jpg",
+  image: "images/recipes/granola.v1.jpg",
   tags: {
     type: ["Morgenmad", "Granola"],
     meal: ["Morgenmad", "Snack"],
@@ -155,7 +155,7 @@ const recipes = [
     id: "pizza",
     title: "Glutenfri Pizza",
     description: "Nem og luftig glutenfri pizzadej, der kan formes med ske og bages sprød - perfekt til hjemmelavet pizza.",
-    image: "images/recipes/Pizza.jpg", // optional
+    image: "images/recipes/pizza.jpg", // optional
     tags: {
       type: ["Pizza"],
       meal: ["Aftensmad"],
@@ -189,7 +189,7 @@ const recipes = [
     id: "Koldhævet grydebrød",
     title: "Koldhævet grydebrød",
     description: "Saftigt glutenfrit grydebrød med mørk skorpe. Optimeret til bagegryde.",
-    image: "images/recipes/Grydebrød.jpg",
+    image: "images/recipes/grydebrød.jpg",
     tags: {
       type: ["Brød"],
       meal: ["Morgenmad", "Frokost"],
@@ -232,7 +232,7 @@ const recipes = [
     id: "joses-broed",
     title: "Jose's boller",
     description: "Bløde og luftige glutenfri boller, velegnede til morgenmad eller som hverdagsbrød.",
-    image: "images/recipes/Boller.jpg",
+    image: "images/recipes/boller.jpg",
     tags: {
       type: ["Brød"],
       meal: ["Morgenmad", "Frokost"],
@@ -268,7 +268,7 @@ const recipes = [
   id: "glutenfri-wraps-boghvede",
   title: "Glutenfri boghvede-wraps",
   description: "Bløde og smidige glutenfri wraps lavet på boghvedemel og psyllium, perfekte til fyld eller som snack.",
-  image: "images/recipes/Tortillas.jpg",
+  image: "images/recipes/tortillas.jpg",
   tags: {
     type: ["Brød", "Wraps"],
     meal: ["Frokost", "Aftensmad"],

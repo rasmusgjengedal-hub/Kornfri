@@ -385,7 +385,7 @@ const recipeData = {
   },
   'grydebrød': {
     title: 'Grydebrød',
-    image: 'images/recipes/Grydebrød.jpg',
+    image: 'images/recipes/grydebrød.jpg',
     time: '8-12 timer',
     servings: '1 brød',
     difficulty: 'Medium',
