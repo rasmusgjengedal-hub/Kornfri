@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Glutenfri Opskrifter - Kornfri</title>
-  <meta name="description" content="Find alle vores glutenfri opskrifter samlet ét sted. Fra brød og boller til kager og snacks – inspiration til en glutenfri hverdag.">
-  <meta name="keywords" content="glutenfri opskrifter, glutenfri brød, glutenfri boller, glutenfri kager, glutenfri snacks, kornfri">
-  <link rel="icon" href="images/ui/kornfri-favicon.png" type="image/png">
-  <link rel="stylesheet" href="css/basic.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kornfri - Glutenfri Opskrifter og Inspiration</title>
+    <meta name="description" content="Kornfri tilbyder lækre glutenfri opskrifter, tips og inspiration til en glutenfri hverdag. Find opskrifter på brød, boller, kager og mere.">
+    <meta name="keywords" content="glutenfri, opskrifter, kornfri, glutenfri boller, glutenfri brød, glutenfri kager">
+    <link rel="icon" href="images/ui/kornfri-favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/frontpage.css">
 </head>
 <body>
-
     <header>
         <nav class="navigation">
             <div class="nav-left">
-            <a href="frontpage.html">
+            <a href="index.html">
                 <img src="images/ui/website-logo.png" alt="Logo" class="logo">
             </a>
             </div>
@@ -25,8 +24,8 @@
             </button>
 
             <div class="nav-center">
-            <a href="frontpage.html">Forside</a>
-            <a href="index.html">Opskrifter</a>
+            <a href="index.html">Forside</a>
+            <a href="recipe-list.html">Opskrifter</a>
             <a href="produkter.html">Glutenfri Bagning</a>
             <a href="about-us.html">KORNFRI</a>
             <a href="kontakt.html">Kontakt</a>
@@ -35,62 +34,151 @@
             <div class="nav-right"></div>
         </nav>
     </header>
+<!-- Billede på forside-sektion-->
+    <main>  
+        <div class="hero-sektion">
+            <h2>Velkommen Til Mit Glutenfrie Univers</h2>
+            <img src="images/ui/hero.jpg" alt="billede af bagværk">
+        </div>
+<!-- Opskrifts-sektion-->
+        <div class="opskrifter">
+            <h2 class="nyheder-titel">Populære opskrifter!</h2>
+            <p>Prøv de mest populære glutenfrie opskrifter eller opdag de bedste glutenfrie produkter!</p>
+            <div class="opskriftscontainer">
+                    <div class="item" onclick="openRecipeModal('koldhævede-boller')">
+                        <h3>Koldhævede boller</h3>
+                        <img src="images/recipes/koldhaevede-bollver.v1.jpg" alt="Koldhævede boller">
+                    </div>
+                    <div class="item" onclick="openRecipeModal('grydebrød')">
+                        <h3>Grydebrød</h3>
+                        <img src="images/recipes/grydebrød.jpg" alt="Grydebrød">
+                    </div>
+                    <div class="item" onclick="openRecipeModal('pizzadej')">
+                        <h3>Pizzadej</h3>
+                        <img src="images/recipes/pizza.jpg" alt="Glutenfri Pizza">
+                    </div>
+                    <div class="item" onclick="openRecipeModal('granola')">
+                        <h3>Granola</h3>
+                        <img src="images/recipes/granola.v3.jpg" alt="billede af brød">
+                    </div>
+                    <div class="item" onclick="openRecipeModal('surdej')">
+                        <h3>Surdej</h3>
+                        <img src="images/recipes/surdej.v1.jpg" alt="billede af brød">
+                    </div>
+                    <div class="item">
+                        <a href="https://www.instagram.com/kornfri.dk/" target="_blank">
+                        <h3>Instagram</h3>
+                        <p>Check mere indhold på Instagram</p>
+                        <img class="instagram-nyhed" src="images/ui/instagram-logo.v1.png" alt="Check vores Instagram">
+                        </a>
+                    </div>
 
 
-
-<!-- Filters -->
-<h1 class="title">Se alle KORNFRI's opskrifter!</h1>
-<nav id="category-filters"></nav>
-
-<!-- Recipe list -->
-<main>
-  <section id="recipes-list"></section>
-</main>
-
-
-
-
-
-
-
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <img src="images/ui/website-logo.png" alt="Logo">
-      <p>Glutenfri opskrifter og inspiration</p>
-    </div>
-
-    <div class="footer-links">
-      <h4>Menu</h4>
-      <a href="frontpage.html">Forside</a>
-      <a href="index.html">Opskrifter</a>
-      <a href="produkter.html">Glutenfri Bagning</a>
-      <a href="about-us.html">KORNFRI</a>
-      <a href="kontakt.html">Kontakt</a>
-    </div>
-
-    <div class="footer-socials">
-      <h4>Kontakt</h4>
-      <p>Email: kornfri@outlook.com</p>
-       <a href="https://www.instagram.com/kornfri.dk/" 
-          target="_blank" 
-          rel="noopener"
-          aria-label="Besøg os på Instagram"
-          class="instagram-link">
-           <img src="images/ui/instagram-logo.v1.png" alt="Instagram ikon">
-         </a>
             </div>
-  </div>
+        </div>
+<!-- Links til nyheder-->
+        <div class="nyheder">
+            <h2 class="nyheder-titel">Nyheder</h2>
+            <ul>
+                <li><a href="MinOplevelseMedCøliaki.html" onclick="openNewsModal(event, 'MinOplevelseMedCøliaki.html')">Min oplevelse med Cøliaki</a></li>
+                <li><a href="recipe2.html" onclick="openNewsModal(event, 'recipe2.html')">5 myter om Glutenfri Kost - Sandt eller Falsk</a></li>
+                <li><a href="recipe3.html" onclick="openNewsModal(event, 'recipe3.html')">De Bedste Glutenfri Ingredienser til Hverdagen</a></li>
+                <li><a href="recipe4.html" onclick="openNewsModal(event, 'recipex.html')">Kommer</a></li>
+                <li><a href="recipe5.html" onclick="openNewsModal(event, 'recipex.html')">Kommer</a></li>
+                <li><a href="recipe6.html" onclick="openNewsModal(event, 'recipex.html')">Kommer</a></li>
+            </ul>
+        </div>
+    </main>
+<!-- Footer-->
+   <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="images/ui/website-logo.png" alt="Logo">
+                <p>Glutenfri opskrifter og inspiration</p>
+            </div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2026 Glutenfri Hjemmeside</p>
-  </div>
-</footer>
+            <div class="footer-links">
+                <h4>Menu</h4>
+                <a href="index.html">Forside</a>
+                <a href="recipe-list.html">Opskrifter</a>
+                <a href="produkter.html">Glutenfri Bagning</a>
+                <a href="about-us.html">KORNFRI</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
 
-<script src="js/recipes-data.js"></script>
-<script src="js/recipes-list.js"></script>
-<script src="js/nav-bar.js"></script>
+            <div class="footer-socials">
+                <h4>Kontakt</h4>
+                <p>Email: kornfri@outlook.com</p>
+                    <a href="https://www.instagram.com/kornfri.dk/" 
+                        target="_blank" 
+                        rel="noopener"
+                        aria-label="Besøg os på Instagram"
+                        class="instagram-link">
+                        <img src="images/ui/instagram-logo.v1.png" alt="Instagram ikon">
+                        </a>
+            </div>
+        </div>
 
+        <div class="footer-bottom">
+            <p>&copy; 2026 Glutenfri Hjemmeside</p>
+        </div>
+    </footer>
+
+    <!-- News Modal -->
+    <div id="news-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <img id="modal-image" src="" alt="Nyhedsbillede">
+            <h1 id="modal-title">Modal Title</h1>
+            <p id="modal-text">Modal text content goes here.</p>
+        </div>
+    </div>
+
+    <!-- Recipe Modal -->
+    <div id="recipe-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeRecipeModal()">&times;</button>
+            <img id="recipe-modal-image" src="" alt="Opskriftsbillede">
+            <h1 id="recipe-modal-title">Opskrift Titel</h1>
+            <div class="recipe-modal-body">
+                <div class="recipe-info">
+                    <div class="info-badge">
+                        <span class="info-icon">⏱️</span>
+                        <div>
+                            <strong>Tid</strong>
+                            <p id="recipe-time">-</p>
+                        </div>
+                    </div>
+                    <div class="info-badge">
+                        <span class="info-icon">👥</span>
+                        <div>
+                            <strong>Portioner</strong>
+                            <p id="recipe-servings">-</p>
+                        </div>
+                    </div>
+                    <div class="info-badge">
+                        <span class="info-icon">⭐</span>
+                        <div>
+                            <strong>Sværhedsgrad</strong>
+                            <p id="recipe-difficulty">-</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <p id="recipe-modal-description" class="recipe-description"></p>
+                
+                <h3>Ingredienser</h3>
+                <ul id="recipe-modal-ingredients"></ul>
+                
+                <h3>Fremgangsmåde</h3>
+                <ol id="recipe-modal-instructions"></ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for modal -->
+    <script src="js/modal.js"></script>
+    <script src="js/nav-bar.js"></script>    
+   
 </body>
 </html>

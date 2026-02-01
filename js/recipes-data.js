@@ -35,7 +35,7 @@ const recipes = [
     id: "kanelsnurrer",
     title: "Kanelsnurrer",
     description: "Bløde og saftige glutenfri kanelsnurrer med klassisk remonce og masser af smag.",
-    image: "images/recipes/kanelsnurre.jpg", // optional
+    image: "images/recipes/kardemommesnurre.jpg", // optional
     tags: {
       type: ["Kage"],
       meal: ["Dessert"],
