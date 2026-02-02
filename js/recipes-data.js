@@ -264,11 +264,79 @@ const recipes = [
       "Lad bollerne køle af på rist før servering"
     ]
   },
+{
+  id: "surdejsboller-bagestaal",
+  title: "Surdejsboller – Bagestål",
+  description: "Saftige surdejsboller med fiberhusk og aktiv surdej, perfekt bagt på bagestål med mulighed for damp. Bløde indeni og sprøde udenpå.",
+  image: "images/recipes/surdejsboller/kort.haevning/surdej.korthaevning.v1.jpg",
+  tags: {
+    type: ["Brød", "Boller", "Surdej"],
+    meal: ["Morgenmad", "Frokost"],
+    difficulty: ["Mellem"]
+  },
+  prepTime: "20 minutter",
+  cookTime: "14–18 minutter",
+  ingredients: [
+    "445 g vand",
+    "120 g aktiv surdej",
+    "4–5 g gær",
+    "20 g fiberhusk",
+    "2 æg",
+    "8 g sukker",
+    "10 g salt",
+    "300 g rød Finax",
+    "100 g boghvedemel",
+    "50 g majsstivelse",
+    "10 g neutral olie (valgfrit)"
+  ],
+  steps: [
+    "Opløs gær og surdej i vandet sammen med sukker",
+    "Tilsæt fiberhusk og rør kraftigt i 20–30 sekunder. Lad stå 2–3 minutter til geléagtig konsistens",
+    "Tilsæt æg og salt og rør til massen er ensartet",
+    "Tilsæt rød Finax, boghvedemel og majsstivelse. Rør/pisk 10–15 minutter til dejen er tyk, blank, klistret og kan holde form kortvarigt",
+    "Dæk skålen til og lad dejen hæve 45–60 minutter ved stuetemperatur",
+    "Fugt hænderne og form bollerne på bagepapir. Glat overfladen let med våde fingre",
+    "Lad bollerne efterhæve 25–35 minutter ved stuetemperatur",
+    "Forvarm ovnen til 250 °C over/undervarme (valgfrit: sæt tom bradepande i bunden til damp)",
+    "Bag bollerne i 14–18 minutter. Hvis damp bruges, hæld ½ dl kogende vand i den varme bradepande og luk ovnen straks",
+    "Tag bollerne ud og lad dem køle af på rist i mindst 20 minutter"
+  ],
+  subSteps: {
+    Dej: [
+      "Hæld vandet i en stor skål",
+      "Tilsæt surdej, gær og sukker",
+      "Rør grundigt til alt er opløst"
+    ],
+    "Første hævning": [
+      "Dæk skålen til",
+      "Lad dejen hæve 45–60 minutter ved stuetemperatur"
+    ],
+    Formning: [
+      "Fugt hænderne",
+      "Form bollerne på bagepapir",
+      "Glat overfladen let med våde fingre"
+    ],
+    "Efter Hævning": [
+      "Lad bollerne efterhæve 25–35 minutter ved stuetemperatur",
+      "Test: Tryk let – aftrykket skal langsomt rejse sig igen",
+      "Mens bollerne hæver forvarmes ovnen med over/undervame og 250°C"
+    ],
+    "Bagning med damp": [
+      "Sæt bollerne i ovnen",
+      "Hæld ½ dl kogende vand i den varme bradepande og luk ovnen straks",
+      "Bag 14–18 minutter til bollerne er let gyldne og faste"
+    ],
+    "Bagning uden damp": [
+      "Bag ved 250 °C i 14–18 minutter til bollerne er let gyldne og faste"
+    ]
+  }
+},
+
   {
   id: "surdejsboller-koldhaevede-bagestaal",
   title: "Koldhævede surdejsboller",
   description: "Glutenfri koldhævede surdejsboller med fiberhusk og aktiv surdej. Lang hævetid giver god struktur og smag, perfekt bagt på bagestål.",
-  image: "images/recipes/surdejsbolle.jpg",
+  image: "images/recipes/surdejsboller/surdejsboller.v9.jpg",
   tags: {
     type: ["Brød", "Boller", "Surdej"],
     meal: ["Morgenmad", "Frokost"],
