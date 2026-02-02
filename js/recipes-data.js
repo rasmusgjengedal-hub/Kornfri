@@ -5,12 +5,12 @@ const recipes = [
     description: "Lækre bløde koldhævede boller, perfekt til morgenbordet.",
     image: "images/recipes/koldhaevede-bollver.v2.jpg", // optional
     tags: {
-      type: ["Boller"],
-      meal: ["Frokost"],
+      type: ["Boller", "Brød"],
+      meal: ["Morgenmad", "Frokost"],
       difficulty: ["Nem"]
     },
-    prepTime: "8-12 timer",
-    cookTime: "17-25 minutter",
+    prepTime: "17-25 minutter",
+    cookTime: "8-12 timer",
     ingredients: [
       "20g gær eller 8g tørgær",
       "10g salt",
@@ -42,7 +42,7 @@ const recipes = [
       difficulty: ["Svær"]
     },
     prepTime: "30",            // minutter (aktiv tid)
-    cookTime: "15-18",         // minutter
+    cookTime: "90",         // minutter
     ingredients: [
       "25 g gær",
       "300 ml lunkent vand",
@@ -80,8 +80,8 @@ const recipes = [
   description: "Hjemmelavet sprød granola med mandler, pekannødder og kokos - let sødet med sirup og bagt i ovnen til perfekte klumper.",
   image: "images/recipes/granola.v1.jpg",
   tags: {
-    type: ["Morgenmad", "Granola"],
-    meal: ["Morgenmad", "Snack"],
+    type: ["Granola", "Snack"],
+    meal: ["Morgenmad", "Mellemmåltid"],
     difficulty: ["Nem"]
   },
   prepTime: "10 minutter",
@@ -122,7 +122,7 @@ const recipes = [
     image: "images/recipes/poelsehornv1.jpg", // optional
     tags: {
       type: ["Snack"],
-      meal: ["Frokost"],
+      meal: ["Frokost", "Mellemmåltid"],
       difficulty: ["Nem"]
     },
     prepTime: "15 minutter",              // minutes, optional
@@ -158,7 +158,7 @@ const recipes = [
     image: "images/recipes/pizza.jpg", // optional
     tags: {
       type: ["Pizza"],
-      meal: ["Aftensmad"],
+      meal: ["Aftensmad","Frokost"],
       difficulty: ["Nem"]
     },
     prepTime: "25",     // minutter (inkl. hævning)
@@ -234,7 +234,7 @@ const recipes = [
     description: "Bløde og luftige glutenfri boller, velegnede til morgenmad eller som hverdagsbrød.",
     image: "images/recipes/boller.jpg",
     tags: {
-      type: ["Brød"],
+      type: ["Boller", "Brød"],
       meal: ["Morgenmad", "Frokost"],
       difficulty: ["Nem"]
     },
@@ -265,12 +265,75 @@ const recipes = [
     ]
   },
   {
+  id: "surdejsboller-koldhaevede-bagestaal",
+  title: "Koldhævede surdejsboller",
+  description: "Glutenfri koldhævede surdejsboller med fiberhusk og aktiv surdej. Lang hævetid giver god struktur og smag, perfekt bagt på bagestål.",
+  image: "images/recipes/surdejsbolle.jpg",
+  tags: {
+    type: ["Brød", "Boller", "Surdej"],
+    meal: ["Morgenmad", "Frokost"],
+    difficulty: ["Mellem"]
+  },
+  prepTime: "25 minutter",
+  cookTime: "6-24 timer",
+  ingredients: [
+    "5,8 dl lunkent vand",
+    "30 g fiberhusk",
+    "3 g gær (eller 1 g tørgær)",
+    "120 g aktiv surdej",
+    "30 g honning",
+    "10 g olivenolie",
+    "300 g rød Finax",
+    "120 g havremel / boghvedemel / fuldkornsrismel",
+    "30 g majsstivelse",
+    "10 g salt"
+  ],
+  steps: [
+    "Opløs gæren i det lunkne vand",
+    "Tilsæt fiberhusk og rør til en fast gelé",
+    "Tilsæt honning, olie og surdej og rør til en ensartet masse",
+    "Tilsæt salt, mel og stivelse og rør til en fast dej",
+    "Lad dejen hvile i 15 minutter",
+    "Form bollerne i ønsket størrelse",
+    "Sæt bollerne tildækket på køl i 6-24 timer",
+    "Tag bollerne ud 1 time før bagning",
+    "Forvarm ovn med bagestål til 250°C",
+    "Bag med eller uden damp efter metode"
+  ],
+  subSteps: {
+    Dej: [
+      "Opløs gæren i det lunkne vand",
+      "Tilsæt fiberhusk og rør til en fast gelé",
+      "Tilsæt honning, olie og surdej og rør til en ensartet masse",
+      "Tilsæt salt, mel og stivelse og rør til en fast dej",
+      "Lad dejen hvile i 15 minutter"
+    ],
+    'Formning & Hævning': [
+      "Form bollerne i ønsket størrelse",
+      "Sæt bollerne tildækket på køl i 6-24 timer"
+    ],
+    Klargøring: [
+      "Tag bollerne ud af køleskabet 1 time før bagning",
+      "Forvarm ovn med bagestål til 250°C"
+    ],
+    'Bagning med damp': [
+      "Sæt bollerne i ovnen og hæld lidt kogende vand i bunden for at skabe damp",
+      "Luk hurtigt ovnen",
+      "Efter 5 minutter lukkes dampen ud og temperaturen sænkes til 220°C",
+      "Bag videre i 12-20 minutter"
+    ],
+    'Bagning uden damp': [
+      "Bag ved 230°C i 17-25 minutter"
+    ]
+  }
+},
+  {
   id: "glutenfri-wraps-boghvede",
   title: "Glutenfri boghvede-wraps",
   description: "Bløde og smidige glutenfri wraps lavet på boghvedemel og psyllium, perfekte til fyld eller som snack.",
   image: "images/recipes/tortillas.jpg",
   tags: {
-    type: ["Brød", "Wraps"],
+    type: ["Wraps", "Snack"],
     meal: ["Frokost", "Aftensmad"],
     difficulty: ["Nem"]
   },
@@ -322,7 +385,7 @@ const recipes = [
   prepTime: "25 minutter",
   cookTime: "15 minutter",
   ingredients: [
-    "400 ml lunt vand (30-35 °C)",
+    "400 ml lunt vand (350 ml hvis du bruger æg)",
     "10 g fiberhusk (ca. 2 spsk)",
     "25 g frisk gær",
     "20 g olivenolie (ca. 1 spsk)",
@@ -393,8 +456,8 @@ const recipes = [
     description: "Klassiske glutenfri hveder med kardemomme - bløde og luftige, perfekte ristede dagen efter.",
     image: "images/ui/website-logo.png",
     tags: {
-      type: ["Snack", "Boller"],
-      meal: ["Morgenmad","Frokost"],
+      type: ["Boller", "Snack"],
+      meal: ["Morgenmad","Frokost", "Mellemmåltid"],
       difficulty: ["Nem"]
     },
     prepTime: "25 minutter",
@@ -429,8 +492,8 @@ const recipes = [
     description: "Bløde glutenfri chokoladeboller med mørk chokolade - perfekte som kage eller snack.",
     image: "images/ui/website-logo.png",
     tags: {
-      type: ["Kage"],
-      meal: ["Dessert"],
+      type: ["Kage", "Snack"],
+      meal: ["Dessert", "Mellemmåltid"],
       difficulty: ["Nem"]
     },
     prepTime: "20 minutter",
@@ -467,7 +530,7 @@ const recipes = [
     description: "En klassisk og svampet glutenfri drømmekage med lækkert kokosfyld.",
     image: "images/ui/website-logo.png", // optional – ret navnet hvis nødvendigt
     tags: {
-      type: ["Kage"],
+      type: ["Kage", "Snack"],
       meal: ["Dessert"],
       difficulty: ["Nem"]
     },
@@ -503,7 +566,7 @@ const recipes = [
     description: "Nem og hurtig glutenfri fladbrød lavet på græsk yoghurt - perfekt som tilbehør eller wrap.",
     image: "images/ui/website-logo.png", // optional
     tags: {
-      type: ["Brød"],
+      type: ["Brød", "Wrap"],
       meal: ["Frokost", "Aftensmad"],
       difficulty: ["Nem"]
     },
@@ -530,8 +593,8 @@ const recipes = [
   title: "Glutenfri fastelavnsboller med vaniljecreme",
   description: "Bløde glutenfri fastelavnsboller fyldt med klassisk remonce og hjemmelavet vaniljecreme, toppet med glasur.",
   tags: {
-    type: ["Kage", "Boller"],
-    meal: ["Dessert"],
+    type: ["Kage", "Boller", "Snack"],
+    meal: ["Dessert", "Mellemmåltid"],
     difficulty: ["Medium"]
   },
   prepTime: "45 minutter",
