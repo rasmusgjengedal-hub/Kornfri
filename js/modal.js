@@ -142,45 +142,81 @@ const newsData = {
     ]
   },
   'recipe4.html': {
-    title: 'Sådan Læser du Fødevareetiketter – Undgå Glutenfælder',
-    image: 'images/ui/website-logo.png',
-    sections: [
-      {
-        type: 'text',
-        content: 'At læse ingredienslister er afgørende når du skal undgå gluten. Her er hvad du skal være opmærksom på.'
-      },
-      {
-        type: 'subtitle',
-        content: 'Ována navne for gluten'
-      },
-      {
-        type: 'bullets',
-        items: [
-          'Hvede, byg, rug, spelt',
-          'Malt (maltekstrakt, maltsirup)',
-          'Hvede-stivelse (ikke modificeret)',
-          'Bulgar, couscous, seitan'
-        ]
-      },
-      {
-        type: 'subtitle',
-        content: 'Skjulte kilder til gluten'
-      },
-      {
-        type: 'bullets',
-        items: [
-          'Sojasauce (brug tamari i stedet)',
-          'Krydderiblandinger',
-          'Bouillonterninger',
-          'Færdigretter og sovs'
-        ]
-      },
-      {
-        type: 'text',
-        content: 'Lær at stole på dit instinkt - hvis du er i tvivl, lad være med at spise det!'
-      }
-    ]
-  },
+  title: 'Sådan skal du forstå hydrering i glutenfri bagning',
+  image: 'images/recipes/surdejsboller/surdejsboller.v1.jpg',
+  sections: [
+    {
+      type: 'text',
+      content: 'I glutenfri bagning er hydrering ikke bare et tal, men fundamentet for struktur, saftighed og hævning. Hvor hvededej bruger gluten til at holde sammen på dejen, skal glutenfri bagværk bygges op af vand, fibre og stivelse, der arbejder tæt sammen.'
+    },
+    {
+      type: 'subtitle',
+      content: 'Hvad betyder hydrering i glutenfri bagning?'
+    },
+    {
+      type: 'text',
+      content: 'Hydrering beskriver forholdet mellem væske og mel. I glutenfri bagning er hydreringen markant højere end i traditionel bagning – ofte 80–110 % eller mere. Glutenfri meltyper binder ikke vand effektivt, og uden nok væske bliver resultatet tørt, kompakt og smuldrende.'
+    },
+    {
+      type: 'text',
+      content: 'En glutenfri dej skal derfor ofte ligne en meget blød dej eller en tyk grød frem for en fast dejkugle.'
+    },
+    {
+      type: 'subtitle',
+      content: 'Fiberhusk – nøglen til struktur'
+    },
+    {
+      type: 'text',
+      content: 'Fiberhusk (psyllium) fungerer som glutenens erstatning. Når det blandes med væske, danner det en gel, der binder vand, holder på gassen fra gæren og giver dejen elasticitet og sammenhæng.'
+    },
+    {
+      type: 'bullets',
+      items: [
+        'Binder store mængder vand',
+        'Stabiliserer dejen ved høj hydrering',
+        'Forhindrer at brødet falder sammen efter bagning',
+        'Giver en mere elastisk og saftig krumme'
+      ]
+    },
+    {
+      type: 'subtitle',
+      content: 'Sådan bruger du fiberhusk korrekt'
+    },
+    {
+      type: 'text',
+      content: 'Den mest stabile metode er at røre fiberhusk ud i væsken først og lade det trække i 1–5 minutter, før de tørre ingredienser tilsættes. Det giver en ensartet gel, færre klumper og en mere forudsigelig dej.'
+    },
+    {
+      type: 'text',
+      content: 'Fiberhusk kan også blandes direkte i de tørre ingredienser, men det kræver meget grundig omrøring og giver større risiko for ujævn hydrering.'
+    },
+    {
+      type: 'subtitle',
+      content: 'Hvor meget fiberhusk skal du bruge?'
+    },
+    {
+      type: 'text',
+      content: 'Som tommelfingerregel bruges 1–2 % fiberhusk i forhold til melmængden. Mere fiberhusk kræver altid mere vand, men for meget kan give en gummiagtig krumme, mens for lidt resulterer i et smuldrende brød.'
+    },
+    {
+      type: 'subtitle',
+      content: 'Samspillet med gær, olie og sukker'
+    },
+    {
+      type: 'text',
+      content: 'Høj hydrering kombineret med fiberhusk giver gæren bedre arbejdsforhold. Olie eller andet fedt blødgør strukturen og modvirker tørhed, mens sukker eller honning både hjælper gæren, binder fugt og forlænger holdbarheden.'
+    },
+    {
+      type: 'text',
+      content: 'I glutenfri bagning hænger det hele sammen – ændrer du én parameter, påvirker du hydreringen og det endelige resultat.'
+    },
+    {
+      type: 'text',
+      content: 'Kort sagt: Mere vand, den rette mængde fiberhusk og korrekt hydrering er nøglen til luftigt, saftigt og stabilt glutenfrit bagværk.'
+    }
+  ]
+},
+
   'recipe5.html': {
     title: 'Glutenfri Snacks på Farten – Hurtige og Lækre',
     image: 'images/ui/website-logo.png',
