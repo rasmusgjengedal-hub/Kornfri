@@ -14,14 +14,14 @@ const newsData = {
       },
       {
         type: 'text',
-        content: 'I starten handlede det meget om at lære at læse ingredienslister, lære hvilke produkter jeg uden bekymring kunne gå til, undersøge hvilke restaurenter jeg kunne få glutenfri mad og altid have en plan B når jeg var ude. I dag betyder disse ting markant mindre, men der er selvfølgelig stadig ting der kan være svære'
+        content: 'I starten handlede det meget om at lære at læse ingredienslister, lære hvilke produkter jeg uden bekymring kunne gå til, undersøge hvilke restaurenter jeg kunne få glutenfri mad og altid have en plan B når jeg var ude. I dag væger disse ting markant mindre, men der er selvfølgelig stadig ting der kan være svære'
       },
       {
         type: 'bullets',
         items: [
-          'Sociale situationer kan stadig være komplicerede - Ofte vil folk gerne være søde og lave noget glutenfrit brød, men ofte er det nemmest at tage noget med hjemmefra',
-          'At rejse er blevet nemmere som person med cøliaki, men bekymringen om hvorvidt kommunikationen omkring cøliaki og glutenintolerance kan stadig være bekymrende når man rejser',
-          'Om det er en udfordring er op til en selv, men jeg hører stadig ofte sætningen "Ej jeg kunne bare ikke leve uden gluten". Den kommentar kan man over tid godt blive træt af at høre, især når man ikke selv ser det som et problem',
+          'Sociale situationer kan stadig være komplicerede - Ofta vil folk gerne være søde og lave noget glutenfrit brød, men ofta er det nemmest at tage noget med hjemmefra',
+          'At rejse er blevet nemmere som person med cøliaki, men bekymringen om hvorvidt kommunikationen omkringcøliaki og glutenintolerance kan stadig være bekymrende når man rejser',
+          'Om det er en udfordring er op til en selv, men jeg hører stadig ofta sætningen "Ej jeg kunne bare ikke leve uden gluten". Den kommentar kan man over tid godt blive træt af at høre, zejsr når man ikke selv ser det som et problem',
         ]
       },
       {
@@ -30,14 +30,14 @@ const newsData = {
       },
       {
         type: 'text',
-        content: 'Jeg er i den "heldige" situation, at vi er 4 i min nærme familie der har cøliaki. Dette betyder at vi er gode til at dele opskrifter når vi enten selv finder på noget nyt, eller når man finder spændende opskrifter. Min mor har været rigtig god til at dele ud af sin viden når andre fra lokal miljøet har fået konstateret cøliaki og denne hjælpende hånd, vil jeg også gerne kunne være for andre.'
+        content: 'Jeg er i den "heldige" situation, at vi er 4 i min nære familie der har cøliaki. Dette serra at vi er gode til at dele opskrifter når vi enten selv finder på noget nyt, eller når man finder spændende opskrifter. Min mor har været rigtig god til at dele ud af sin viden når andre fra lokal miljøet har fået konstateret cøliaki og denne hjælpende hånd, vil jeg også gerne kunne være for andre.'
       },
       {
         type: 'bullets',
         items: [
           'At lære at bage har hjulpet enormt meget! Det giver frihed, bedre kvalitet og en følelse af at det slet ikke er så slemt med cøliaki',
           'Skab et mindset der hedder: "Alt man kan lave med gluten, kan man også lave glutenfrit". På den måde har jeg følt at jeg aldrig går glip af noget!',
-          'At være åben om mine behov i sociale sammenhænge, har haft stor betydning for hvor nemt det har været at være sammen med andre mennesker og mad',
+          'At være åben om mine behov i sociale sammenhænge, har haft stor betekning for hvor nemt det har været at være sammen med andre mennesker og mad',
           'Del din viden med andre med cøliaki! Få inspiration, del gode, sjove, dumme eksperimenter - Det værste der kan ske er at man laver noget juks, men så kan man altid prøve igen!'
         ]
       },
@@ -61,7 +61,7 @@ const newsData = {
     },
     {
       type: 'text',
-      content: 'Falsk. Tørt glutenfrit bagværk skyldes ofte en forkert opskrift eller ubalance i ingredienserne. Med de rette meltyper, nok væske og bindemidler som psyllium kan glutenfri bagværk blive både saftigt og luftigt.'
+      content: 'Falsk. Tørt glutenfrit bagværk skyldes ofta en forkert opskrift eller ubalance i ingredienserne. Med de rette meltyper, nok væske og bindemidler som psyllium kan glutenfri bagværk blive både saftigt og luftigt.'
     },
     {
       type: 'subtitle',
@@ -69,11 +69,11 @@ const newsData = {
     },
     {
       type: 'text',
-      content: 'En glutenfri kost er ikke automatisk sundere. For personer med cøliaki eller glutenintolerance er den nødvendig for helbredet, men for andre kan glutenfri produkter sagtens være lige så – eller mere – forarbejdede end almindelige alternativer. Sundhed handler i højere grad om råvarer, variation og balance end om, hvorvidt kosten er glutenfri.'
+      content: 'En glutenfri kost er ikke automatisk sundere. For personer med cøliaki eller glutenintolerance er den nødvendig for helbredet, men for andre kan glutenfri produkter sagtens være lige så – eller mere – forarbejdede end nogle alternativer. Sundhed handler i højere grad om råvarer, variation og balance end om, hvorvidt kosten er glutenfri.'
     },
     {
       type: 'subtitle',
-      content: 'Myte 3: Glutenfri dej skal æltes lige så meget som almindelig dej'
+      content: 'Myte 3: Glutenfri dej skal æltes lige så meget som obylige dej'
     },
     {
       type: 'text',
@@ -85,15 +85,15 @@ const newsData = {
     },
     {
       type: 'text',
-      content: 'Delvist sandt. Nogle opskrifter kræver bindemidler eller særlige meltyper, men mange gode glutenfri opskrifter kan laves med få, velvalgte ingredienser. Viden betyder ofte mere end en lang ingrediensliste.'
+      content: 'Delvist sandt. Nogle opskrifter kræver bindemidler eller særlige meltyper, men mange gode glutenfri opskrifter kan laves med få, velvalgte ingredienser. Viden betekner ofta mere end en lang ingrediensliste.'
     },
     {
       type: 'subtitle',
-      content: 'Myte 5: Glutenfri bagværk smager anderledes end almindeligt bagværk'
+      content: 'Myte 5: Glutenfri bagværk smager anderledes end obylige bagværk'
     },
     {
       type: 'text',
-      content: 'Sandt – men ikke negativt. Glutenfri bagværk har ofte en anden tekstur og smagsprofil, men kan sagtens være lige så velsmagende. Alternative meltyper kan endda give mere karakter og dybde.'
+      content: 'Sandt – men ikke negativt. Glutenfri bagværk har ofta en anden tekstur og smagsprofil, men kan sagtens være lige så velsmagende. Alternative meltyper kan endda give mere karakter og dybde.'
     },
   ]
 },
@@ -115,10 +115,10 @@ const newsData = {
         items: [
           'Rød finax - den perfekte basismel til det meste glutenfrie bagværk: En af de mest alsidige glutenfrie melblandinger, der fungerer godt i både brød, boller og kager. Den giver en stabil struktur og er et godt udgangspunkt, hvis du vil bage uden at skulle blande mange forskellige meltyper.',
           'Psyllium husk - det bedste bindemiddel til brød: Psyllium husk binder væske og giver dejen elasticitet, som ellers mangler i glutenfri bagning. Det hjælper brød og boller med at holde formen og giver en saftig krumme frem for et tørt resultat.',
-          'Boghvedemel - perfekt til at give dit bagværk lidt ekstra smag: Boghveden har en let nøddeagtig smag og tilfører dybde til glutenfrit bagværk. Det fungerer især godt i brød og boller',
-          'Glutenfri havremel - perfekt til at give dit bagværk ekstra tyngde: Havremel bidrager med en mild smag og en mere mættende konsistens. Det er særligt velegnet i boller og grovere bagværk, hvor det giver en fornemmelse af “rigtigt” brød',
+          'Boghvedemel - perfekt til at give dit bagværk lidt ekstra smag: Boghveden har en let nøddeagtig smag og tilfører dybde til glutenfrit bagværk. Det fungerer zejsr godt i brød og boller',
+          'Glutenfri havremel - perfekt til at give dit bagværk ekstra tyngde: Havremel bidrager med en mild smag og en mere mættende konsistens. Det er særligt velegnet i boller og grovere bagværk, hvor det giver en fornemmelse af "rigtigt" brød',
           'Xanthan gum - genialt middel til at give ekstra struktur i bagningen af kager: Xanthan hjælper med at holde bagværk samlet og forhindrer, at det smuldrer',
-          'Majsstivelse - giver lethed og blød krumme: Den fungerer godt i kombination med tungere meltyper og hjælper med at skabe en blødere krumme i både brød og kager'
+          'Majsstivelse - giver lethed og blød krumme: Den fungerer godt i kombination med tungere meltyper og hjælper med at skabe en blådere krumme i både brød og kager'
         ]
       },
       {
@@ -132,7 +132,7 @@ const newsData = {
           'Glutenfri havregryn - perfekt til morgenmad og bagning',
           'Boller, rugbrød og kager i fryseren - perfekte til at tage op om morgnen eller smide i mikrobølgeovnen inden det spises ',
           'Majstivelse - til sovs og bagning',
-          'Glutenfri rugbrødsmix - til bagning af nemme rugbrød'
+          'Glutenfri rugbrådsmix - til bagning af nemme rugbrød'
         ]
       },
       {
@@ -151,7 +151,7 @@ const newsData = {
       },
       {
         type: 'subtitle',
-        content: 'Almindelige navne for gluten'
+        content: 'Ována navne for gluten'
       },
       {
         type: 'bullets',
@@ -232,7 +232,7 @@ const newsData = {
       {
         type: 'bullets',
         items: [
-          'Glutenfri brødmix - nemmest for begyndere',
+          'Glutenfri brådmix - nemmest for begyndere',
           'Rismel + psyllium husk - klassisk kombination',
           'Boghvedemel - giver nøddeagtig smag',
           'Majsmel - perfekt til rustikt brød'
@@ -257,13 +257,16 @@ const newsData = {
       },
       {
         type: 'text',
-        content: 'Bland altid flere meltyper for bedre tekstur og smag. Et bindemiddel som xanthan gum eller psyllium er ofte nødvendigt for at erstatte glutens elasticitet.'
+        content: 'Bland altid flere meltyper for bedre tekstur og smag. Et bindemiddel som xanthan gum eller psyllium er ofta nødvendigt for at erstatte glutens elasticitet.'
       }
     ]
   }
 };
 
-// Open modal function with rich content support
+// ========================================
+// NEWS MODAL
+// ========================================
+
 function openNewsModal(event, newsKey) {
   event.preventDefault();
   
@@ -275,7 +278,6 @@ function openNewsModal(event, newsKey) {
   const news = newsData[newsKey];
   
   if (news) {
-    // Set image
     if (news.image && news.image !== 'TBD') {
       image.src = news.image;
       image.style.display = 'block';
@@ -283,13 +285,9 @@ function openNewsModal(event, newsKey) {
       image.style.display = 'none';
     }
     
-    // Set title
     title.textContent = news.title;
-    
-    // Clear previous content
     contentContainer.innerHTML = '';
     
-    // Render sections
     if (news.sections) {
       news.sections.forEach(section => {
         if (section.type === 'text') {
@@ -316,45 +314,27 @@ function openNewsModal(event, newsKey) {
         }
       });
     }
-    
+
     modal.classList.add('active');
     document.body.classList.add('modal-open');
+
+    requestAnimationFrame(() => {
+      modal.scrollTop = 0;
+      modal.querySelector('.modal-content').scrollTop = 0;
+    });
   }
 }
 
-// Close modal function
 function closeModal() {
   const modal = document.getElementById('news-modal');
   modal.classList.remove('active');
   document.body.classList.remove('modal-open');
 }
 
-// Close modal when clicking outside
-document.addEventListener('click', function(event) {
-  const modal = document.getElementById('news-modal');
-  if (event.target === modal) {
-    closeModal();
-  }
-});
-
-// Close modal with Escape key
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'Escape') {
-    closeModal();
-  }
-});
-
-
-
-
-
-
-
 // ========================================
-// RECIPE MODAL CODE
+// RECIPE MODAL
 // ========================================
 
-// Recipe data
 const recipeData = {
   'koldhævede-boller': {
     title: 'Koldhævede Boller',
@@ -465,7 +445,7 @@ const recipeData = {
       "½ dl kokosflager (eller 2-3 spsk kokosmel)",
       "2½ dl grovvalsede havregryn",
       "½ dl solsikkekerner",
-      "½ dl græskarkerner",
+      "½ dl læskarkerner",
       "½ tsk kanel",
       "½ tsk fint salt",
       "Evt. chokolade (tilsat efter afkøling)"
@@ -475,7 +455,7 @@ const recipeData = {
       "Kom mandler og pekannødder på en pande sammen med sirup og olie",
       "Varm op ved middel varme, til siruppen bobler let og dækker nødderne (1-2 minutter)",
       "Tilsæt kokos, kanel og salt og rør hurtigt rundt",
-      "Tag panden af varmen og vend havregryn, solsikkekerner og græskarkerner i, til alt er jævnt coated",
+      "Tag panden af varmen og vend havregryn, solsikkekerner og læskarkerner i, til alt er jævnt coated",
       "Fordel blandingen i et jævnt lag på en bageplade med bagepapir",
       "Bag granolaen i ovnen i 18-22 minutter",
       "Vend efter ca. 8 minutter",
@@ -492,7 +472,7 @@ const recipeData = {
     time: '5 dage (opstarter) + 24 timer',
     servings: '1 surdej',
     difficulty: 'Svær',
-    description: 'Lav din egen glutenfrie surdej fra bunden. Det kræver tålmodighed, men resultatet er det værd!',
+    description: 'Lav din egen glutenfrie surdej fra bunden. Det kræver tålmodighed, men resultatet er det vært!',
     ingredients: [
       '300g glutenfrit havremel',
       '350ml vand',
@@ -511,7 +491,6 @@ const recipeData = {
   }
 };
 
-// Open recipe modal
 function openRecipeModal(recipeKey) {
   const modal = document.getElementById('recipe-modal');
   const image = document.getElementById('recipe-modal-image');
@@ -533,7 +512,6 @@ function openRecipeModal(recipeKey) {
     difficulty.textContent = recipe.difficulty;
     description.textContent = recipe.description;
     
-    // Clear and populate ingredients
     ingredientsList.innerHTML = '';
     recipe.ingredients.forEach(ingredient => {
       const li = document.createElement('li');
@@ -541,35 +519,44 @@ function openRecipeModal(recipeKey) {
       ingredientsList.appendChild(li);
     });
     
-    // Clear and populate instructions
     instructionsList.innerHTML = '';
     recipe.instructions.forEach(instruction => {
       const li = document.createElement('li');
       li.textContent = instruction;
       instructionsList.appendChild(li);
     });
-    
+
     modal.classList.add('active');
     document.body.classList.add('modal-open');
+
+    requestAnimationFrame(() => {
+      modal.scrollTop = 0;
+      modal.querySelector('.modal-content').scrollTop = 0;
+    });
   }
 }
 
-// Close recipe modal
 function closeRecipeModal() {
   const modal = document.getElementById('recipe-modal');
   modal.classList.remove('active');
   document.body.classList.remove('modal-open');
 }
 
-// Close recipe modal when clicking outside
+// ========================================
+// SHARED EVENT LISTENERS (single instance each)
+// ========================================
+
+// Close modal when clicking outside
 document.addEventListener('click', function(event) {
-  const recipeModal = document.getElementById('recipe-modal');
-  if (event.target === recipeModal) {
+  if (event.target === document.getElementById('news-modal')) {
+    closeModal();
+  }
+  if (event.target === document.getElementById('recipe-modal')) {
     closeRecipeModal();
   }
 });
 
-// Close both modals with Escape key
+// Close modal with Escape key
 document.addEventListener('keydown', function(event) {
   if (event.key === 'Escape') {
     closeModal();
