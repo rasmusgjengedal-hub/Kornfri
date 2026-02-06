@@ -92,7 +92,7 @@ const recipes = [
     "½ dl sirup (ahorn eller lys)",
     "1 spsk neutral olie eller smeltet kokosolie",
     "½ dl kokosflager (eller 2-3 spsk kokosmel)",
-    "2½ dl grovvalsede havregryn",
+    "2½ dl glutenfrie grovvalsede havregryn",
     "½ dl solsikkekerner",
     "½ dl græskarkerner",
     "½ tsk kanel",
@@ -396,6 +396,83 @@ const recipes = [
   }
 },
 {
+  id: "Droemmekage Roulade",
+  title: "Drømmekage roulade",
+  description: "Luftig glutenfri rouladebund med drømmekagefyld.",
+  image: "images/recipes/droemmekageroulade.v2.png",
+  tags: {
+    type: ["Kage"],
+    meal: ["Dessert", "Kage"],
+    difficulty: ["Mellem"]
+  },
+  prepTime: "15-20 minutter",
+  cookTime: "30-40 minutter",
+  ingredients: [
+    "Dej: 120 g æggeblommer (ca. 6 æg, M/L)",
+    "Dej: 120 g æggehvider",
+    "Dej: 110 g sukker",
+    "Dej: 40 g kartoffelmel",
+    "Dej: 35 g rismel",
+    "Dej: 5 g bagepulver (ca. 1 tsk)",
+    "Dej: 1 nip fint salt",
+    "Dej: 1 tsk vanilje",
+    "Dej: 10 g neutral olie",
+    "Fyld: 180 g brun farin",
+    "Fyld: 110 g smør",
+    "Fyld: 110 g fin kokosmel",
+    "Fyld: 30 g lys sirup",
+    "Fyld: 20 g mælk",
+    "Fyld: 1 nip fint salt",
+    "Fyld: ½ tsk vanilje (valgfrit)"
+  ],
+  steps: [
+    "Forvarm ovnen til 190 °C over/undervarme",
+    "Pisk æggeblommer, 90 g sukker og vanilje lyst og tykt",
+    "Pisk æggehvider med 20 g sukker og salt til blød marengs",
+    "Rør olie i æggeblommeblandingen",
+    "Vend kartoffelmel, rismel og bagepulver i",
+    "Vend marengsen i lidt ad gangen",
+    "Fordel dejen jævnt på en bradepande med bagepapir",
+    "Bag bunden i 8–10 minutter",
+    "Kog smør, farin og sirup sammen ved lav-middel varme til sukkeret er opløst",
+    "Rør kokosmel, salt og evt. vanilje i og hold fyldet varmt",
+    "Vend den bagte bund ud på bagepapir drysset med sukker",
+    "Fordel fyldet på bunden og bag yderligere 5 minutter",
+    "Rul rouladen stramt mens den er varm",
+    "Køl rouladen 30–40 minutter før servering"
+  ],
+  subSteps: {
+    Dej: [
+      "Forvarm ovnen til 190 °C over/undervarme",
+      "Pisk æggeblommer, 90 g sukker og vanilje lyst og tykt",
+      "Pisk æggehvider med 20 g sukker og salt til blød marengs",
+      "Rør olie i æggeblommeblandingen",
+      "Vend kartoffelmel, rismel og bagepulver i",
+      "Vend marengsen i lidt ad gangen",
+      "Fordel dejen jævnt på en bradepande",
+      "Bag i 8–10 minutter"
+    ],
+    Fyld: [
+      "Rør smør, brun farin og sirup sammen i en gryde ved lav-middel varme",
+      "Lad det småkoge ca. 1 minut til sukkeret opløses",
+      "Rør kokosmel, salt og evt. vanilje i",
+      "Hold fyldet varmt til brug"
+    ],
+    Påfyldning: [
+      "Læg et nyt stykke bagepapir på bordet og drys med sukker",
+      "Vend den bagte bund ud på papiret",
+      "Fordel fyldet på bunden",
+      "Bag yderligere 5 minutter"
+    ],
+    Samling: [
+      "Tag kagen ud af ovnen",
+      "Løsn kanterne fra papiret",
+      "Rul rouladen stramt mens den er varm",
+      "Sæt på køl i 30–40 minutter så den sætter sig"
+    ]
+  }
+},
+{
   id: "banan-pandekager-glutenfri-protein",
   title: "Protein bananpandekager",
   description: "Saftige og proteinrige bananpandekager lavet med glutenfri havre, boghvede og valgfrit proteinpulver. Perfekte til morgenmad eller snack med frugt, nødder eller yoghurt.",
@@ -411,46 +488,46 @@ const recipes = [
     "1 moden banan",
     "2 æg",
     "50 g glutenfri havregryn (kan blendes til havremel)",
-    "16 g boghvedemel (ca. 2 spsk)",
+    "15 g boghvedemel (ca. 2 spsk)",
     "50 g proteinpulver (smag efter ønske, fx chokolade)",
     "100 ml mælk",
     "15 g neutral olie (ca. 1 spsk)",
     "5 g bagepulver (ca. 1 tsk)",
     "5 g vaniljepulver (ca. 1 tsk)",
-    "1 g kanel (ca. ½ tsk, valgfrit)"
+    "1 g kanel (ca. ½ tsk, valgfrit)",
+    "15 g let eller græsk youghurt (ca. 1 spsk, valgfrit)"
   ],
   steps: [
-    "Blend de våde ingredienser: mos bananen eller blend med æg, mælk og olie til en glat masse",
+    "Blend de våde ingredienser: Banan, æg, mælk, olie og evt. youghurt til det har en glat masse",
     "Bland de tørre ingredienser: havregryn, boghvedemel, proteinpulver, bagepulver, vanilje og evt. kanel",
     "Vend de tørre ingredienser i bananblandingen",
-    "Lad dejen hvile 5 minutter, så fiberhusk og havre suger væske",
     "Varm en pande op på middel varme og smør let med olie eller smør",
-    "Hæld 2–3 spsk dej pr. pandekage på panden",
-    "Steg 2–3 minutter pr. side, til pandekagerne er gyldne og faste nok til at vende",
+    "Hæld 2-3 spsk dej pr. pandekage på panden",
+    "Steg 2-3 minutter pr. side, til pandekagerne er gyldne og faste nok til at vende",
     "Hold evt. pandekagerne varme i ovn ved 50 °C indtil resten er færdige",
     "Server med toppings som frisk frugt, nødder, yoghurt, sirup eller peanutbutter"
   ],
   subSteps: {
     Dej: [
-      "Mos bananen eller blend med æg, mælk og olie til en glat masse",
-      "Havregryn, boghvedemel, proteinpulver, bagepulver, vanilje og evt. kanel",
-      "Vend de tørre ingredienser i bananblandingen",
-      "Lad dejen hvile 5 minutter"
+      "Mos eller blend banan med æg, mælk, olie og evt youghurt til en glat masse",
+      "Tilsæt havregryn, boghvedemel, proteinpulver, bagepulver, vanilje og evt. kanel",
+      "Lad dejen hvile mens panden opvarmes"
     ],
     Stegning: [
       "Varm en pande op på middel varme og smør let med olie eller smør",
-      "Hæld 2–3 spsk dej pr. pandekage",
-      "Steg 2–3 minutter pr. side, til pandekagerne er gyldne og faste"
+      "Hæld 2-3 spsk dej pr. pandekage",
+      "Steg 2-3 minutter pr. side, til pandekagerne er gyldne og faste"
     ],
     Servering: [
-      "Hold pandekagerne varme i ovn ved 50 °C indtil resten er færdige",
+      "Hold evt. pandekagerne varme i ovn ved 50 °C indtil resten er færdige",
       "Toppings: frisk frugt, nødder, yoghurt, sirup eller peanutbutter"
+    ],
+    "Ekstra tips": [
+      "Hvis du vil have ekstra luftige pandekager, kan du piske æggehviderne stive for sig og vende dem forsigtigt i dejen til sidst",
+      "Alternativt kan du tilsætte 1 spsk danskvand til dejen lige inden stegning for ekstra luftige pandekager"
     ]
   }
 },
-
-
-
   {
   id: "glutenfri-wraps-boghvede",
   title: "Glutenfri boghvede-wraps",
