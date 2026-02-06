@@ -27,17 +27,32 @@ if (!recipe) {
     `).join("");
   };
 
-container.innerHTML = `
-    ${recipe.image 
-        ? `<img src="${recipe.image}" alt="${recipe.title}">` 
-        : ""}
+  // Function to render subIngredients with fold/expand
+  const renderSubIngredients = (subIngredients) => {
+    if (!subIngredients) return "";
+    return Object.entries(subIngredients).map(([section, ingredients], index) => `
+      <div class="substep-section">
+        <h4 class="substep-header" data-index="${index}">
+          ${section.charAt(0).toUpperCase() + section.slice(1)}
+          <span class="arrow">▼</span>
+        </h4>
+        <ul class="substep-list">
+          ${ingredients.map(i => `<li>${i}</li>`).join("")}
+        </ul>
+      </div>
+    `).join("");
+  };
+
+  container.innerHTML = `
+    ${recipe.image ? `<img src="${recipe.image}" alt="${recipe.title}">` : ""}
     <h2>${recipe.title}</h2>
     <p>${recipe.description}</p>
 
     <h3>Ingredienser</h3>
-    <ul>
-      ${recipe.ingredients.map(i => `<li>${i}</li>`).join("")}
-    </ul>
+    ${recipe.subIngredients 
+      ? renderSubIngredients(recipe.subIngredients) 
+      : `<ul>${recipe.ingredients.map(i => `<li>${i}</li>`).join("")}</ul>`
+    }
 
     <h3>Fremgangsmåde</h3>
     ${recipe.subSteps 
@@ -49,7 +64,7 @@ container.innerHTML = `
       <h3>Tid</h3>
       <p>
         ${recipe.prepTime ? `⏱️ Forberedelsestid: ${recipe.prepTime}` : ""} 
-        ${recipe.cookTime ? `⏰ Ventetid: ${recipe.cookTime}` : ""}
+        ${recipe.cookTime ? `⏰ Bagetid: ${recipe.cookTime}` : ""}
       </p>
     ` : ""}
   `;

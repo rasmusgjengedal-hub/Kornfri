@@ -31,19 +31,37 @@ const recipes = [
       "Bag bollerne ved 230 grader i 17-25 minutter"
     ]
   },
-   {
-    id: "kanelsnurrer",
-    title: "Kanelsnurrer",
-    description: "Bløde og saftige glutenfri kanelsnurrer med klassisk remonce og masser af smag.",
-    image: "images/recipes/kardemommesnurre.jpg", // optional
-    tags: {
-      type: ["Kage"],
-      meal: ["Dessert"],
-      difficulty: ["Svær"]
-    },
-    prepTime: "30",            // minutter (aktiv tid)
-    cookTime: "90",         // minutter
-    ingredients: [
+{
+  id: "kanelsnurrer",
+  title: "Kanelsnurrer",
+  description: "Bløde og saftige glutenfri kanelsnurrer med klassisk remonce og masser af smag.",
+  image: "images/recipes/kardemommesnurre.jpg",
+  tags: {
+    type: ["Kage"],
+    meal: ["Dessert"],
+    difficulty: ["Svær"]
+  },
+  prepTime: "30 minutter",
+  cookTime: "90 minutter",
+  
+  ingredients: [
+    "Dej: 25 g gær",
+    "Dej: 300 ml lunkent vand",
+    "Dej: 2 spsk fiberhusk",
+    "Dej: 2 spsk sukker",
+    "Dej: 1 tsk salt",
+    "Dej: 1 tsk kardemomme",
+    "Dej: 1 æg",
+    "Dej: 3 dl fuldkornsrismel",
+    "Dej: 3 dl rød Finax",
+    "Dej: 75 g smør, smeltet",
+    "Fyld: 120 g smør (remonce)",
+    "Fyld: 120 g rørsukker",
+    "Fyld: 2 spsk kanel (evt. lidt kardemomme)"
+  ],
+
+  subIngredients: {
+    Dej: [
       "25 g gær",
       "300 ml lunkent vand",
       "2 spsk fiberhusk",
@@ -53,27 +71,54 @@ const recipes = [
       "1 æg",
       "3 dl fuldkornsrismel",
       "3 dl rød Finax",
-      "75 g smør, smeltet",
+      "75 g smør, smeltet"
+    ],
+    Fyld: [
       "120 g smør (remonce)",
       "120 g rørsukker",
       "2 spsk kanel (evt. lidt kardemomme)"
-    ],
-    steps: [
-      "Rør gær og lunkent vand sammen, indtil gæren er opløst.",
-      "Tilsæt fiberhusk, rør godt rundt og lad blandingen stå i 5-10 minutter.",
-      "Tilsæt sukker, salt, kardemomme og æg, og rør det godt sammen.",
-      "Tilsæt begge meltyper samt det smeltede smør.",
-      "Rør dejen grundigt, indtil konsistensen er fast og ensartet.",
-      "Dæk skålen til og lad dejen hæve i 45 minutter.",
-      "Rør smør, rørsukker og kanel sammen til en jævn remonce.",
-      "Drys lidt mel på bordet og rul dejen ud til en stor firkant.",
-      "Fordel remoncen jævnt over dejen.",
-      "Fold dejen ind mod midten, så der dannes tre lag.",
-      "Skær dejen i strimler på ca. 1-1,5 cm og rul dem til den ønskede form.",
-      "Lad kanelsnurrerne efterhæve i 45 minutter.",
-      "Bag ved 200 °C i 15-18 minutter, indtil de er let gyldne."
     ]
   },
+
+  steps: [
+    "Rør gær og lunkent vand sammen, indtil gæren er opløst",
+    "Tilsæt fiberhusk, rør godt rundt og lad blandingen stå 5-10 minutter",
+    "Tilsæt sukker, salt, kardemomme og æg, og rør godt sammen",
+    "Tilsæt begge meltyper samt smeltet smør og rør dejen grundigt",
+    "Dæk skålen til og lad dejen hæve 45 minutter",
+    "Rør smør, rørsukker og kanel sammen til jævn remonce",
+    "Drys lidt mel på bordet og rul dejen ud til en stor firkant",
+    "Fordel remoncen jævnt over dejen",
+    "Fold dejen ind mod midten, så der dannes tre lag",
+    "Skær dejen i strimler på ca. 1-1,5 cm og rul dem til ønsket form",
+    "Lad kanelsnurrerne efterhæve 45 minutter",
+    "Bag ved 200 °C i 15-18 minutter, indtil let gyldne"
+  ],
+
+  subSteps: {
+    Dej: [
+      "Rør gær og lunkent vand sammen, indtil gæren er opløst",
+      "Tilsæt fiberhusk, rør godt rundt og lad stå 5-10 minutter",
+      "Tilsæt sukker, salt, kardemomme og æg, og rør godt sammen",
+      "Tilsæt begge meltyper samt smeltet smør",
+      "Rør dejen grundigt, indtil konsistensen er fast og ensartet",
+      "Dæk skålen til og lad dejen hæve 45 minutter"
+    ],
+    Fyld: [
+      "Rør smør, rørsukker og kanel sammen til jævn remonce"
+    ],
+    Samling: [
+      "Drys lidt mel på bordet og rul dejen ud til en stor firkant",
+      "Fordel remoncen jævnt over dejen",
+      "Fold dejen ind mod midten, så der dannes tre lag",
+      "Skær dejen i strimler på ca. 1-1,5 cm og rul dem til ønsket form"
+    ],
+    Bagning: [
+      "Lad kanelsnurrerne efterhæve 45 minutter",
+      "Bag ved 200 °C i 15-18 minutter, indtil let gyldne"
+    ]
+  }
+},
   {
   id: "sprød-nødde-granola",
   title: "Sprød nødde-granola",
@@ -407,6 +452,8 @@ const recipes = [
   },
   prepTime: "15-20 minutter",
   cookTime: "30-40 minutter",
+  
+  // Old flat ingredients (kan fjernes hvis du kun vil bruge subIngredients)
   ingredients: [
     "Dej: 120 g æggeblommer (ca. 6 æg, M/L)",
     "Dej: 120 g æggehvider",
@@ -425,6 +472,31 @@ const recipes = [
     "Fyld: 1 nip fint salt",
     "Fyld: ½ tsk vanilje (valgfrit)"
   ],
+  
+  // New structured ingredients
+  subIngredients: {
+    Dej: [
+      "120 g æggeblommer (ca. 6 æg, M/L)",
+      "120 g æggehvider",
+      "110 g sukker",
+      "40 g kartoffelmel",
+      "35 g rismel",
+      "5 g bagepulver (ca. 1 tsk)",
+      "1 nip fint salt",
+      "1 tsk vanilje",
+      "10 g neutral olie"
+    ],
+    Fyld: [
+      "180 g brun farin",
+      "110 g smør",
+      "110 g fin kokosmel",
+      "30 g lys sirup",
+      "20 g mælk",
+      "1 nip fint salt",
+      "½ tsk vanilje (valgfrit)"
+    ]
+  },
+  
   steps: [
     "Forvarm ovnen til 190 °C over/undervarme",
     "Pisk æggeblommer, 90 g sukker og vanilje lyst og tykt",
@@ -441,6 +513,7 @@ const recipes = [
     "Rul rouladen stramt mens den er varm",
     "Køl rouladen 30–40 minutter før servering"
   ],
+  
   subSteps: {
     Dej: [
       "Forvarm ovnen til 190 °C over/undervarme",
@@ -465,7 +538,7 @@ const recipes = [
       "Bag yderligere 5 minutter"
     ],
     Samling: [
-      "Tag kagen ud af ovnen",
+      "Tag rouladen ud af ovnen",
       "Løsn kanterne fra papiret",
       "Rul rouladen stramt mens den er varm",
       "Sæt på køl i 30–40 minutter så den sætter sig"
@@ -595,7 +668,7 @@ const recipes = [
     "160 g glutenfri havremel",
     "160 g majsstivelse",
     "40 g kartoffelmel",
-    "20 g havregryn",
+    "20 g glutenfrie havregryn",
     "20 g solsikkekerner",
     "1 tsk salt (ca. 5 g)"
   ],
@@ -635,7 +708,7 @@ const recipes = [
     "160 g glutenfri havremel",
     "160 g majsstivelse",
     "40 g kartoffelmel",
-    "20 g havregryn",
+    "20 g glutenfrie havregryn",
     "20 g solsikkekerner",
     "1 tsk salt (ca. 5 g)"
   ],
@@ -790,94 +863,142 @@ const recipes = [
     ],
   },
 {
-  id: "glutenfri-fastelavnsboller-vanilje",
-  title: "Glutenfri fastelavnsboller med vaniljecreme",
-  description: "Bløde glutenfri fastelavnsboller fyldt med klassisk remonce og hjemmelavet vaniljecreme, toppet med glasur.",
+  id: "fastelavnsboller-vaniljecreme-remonce",
+  title: "Fastelavnsboller (m. vaniljecreme og remonce)",
+  description: "Bløde og lækre glutenfri fastelavnsboller fyldt med vaniljecreme og remonce, med mulighed for dampbagning.",
+  image: "images/recipes/fastelavnsboller.jpg",
   tags: {
-    type: ["Kage", "Boller", "Snack"],
-    meal: ["Dessert", "Mellemmåltid"],
-    difficulty: ["Medium"]
+    type: ["Kage", "Boller"],
+    meal: ["Dessert", "Kage"],
+    difficulty: ["Mellem"]
   },
   prepTime: "45 minutter",
-  cookTime: "14-16 minutter",
+  cookTime: "15–20 minutter",
+  
   ingredients: [
-    // Dej
-    "25 g gær",
-    "1,5 dl vand",
-    "1,5 dl mælk",
-    "20 g fiberhusk",
-    "1 tsk salt",
-    "25 g sukker",
-    "1½ tsk kardemomme",
-    "40 g smør",
-    "75 g havre- eller boghvedemel",
-    "175 g Finax rød",
-    "1 æg (valgfrit i dejen)",
-    "1 æg til pensling",
-    
-    // Remonce
-    "50 g smør",
-    "50 g sukker",
-    "1 tsk majsstivelse",
-    "½ tsk vanilje",
-    
-    // Vaniljecreme
-    "2 dl mælk",
-    "1 æggeblomme",
-    "30 g sukker",
-    "15 g majsstivelse",
-    "½ tsk vanilje",
-    "15 g smør",
-    
-    // Glasur
-    "150 g flormelis",
-    "2-3 spsk vand eller mælk",
-    "½ tsk citronsaft (valgfrit)"
+    // Old flat ingredients (valgfrit)
+    "Dej: 25 g gær",
+    "Dej: 1,5 dl vand",
+    "Dej: 1,5 dl mælk",
+    "Dej: 20 g fiberhusk",
+    "Dej: 1 tsk salt",
+    "Dej: 25 g sukker",
+    "Dej: 1½ tsk kardemomme",
+    "Dej: 40 g smør",
+    "Dej: 75 g havre- eller boghvedemel",
+    "Dej: 175 g rød Finax",
+    "Dej: evt. 1 æg i dejen",
+    "Dej: 1 æg til pensling",
+    "Vaniljecreme: 2 dl mælk",
+    "Vaniljecreme: 1 æggeblomme",
+    "Vaniljecreme: 30 g sukker",
+    "Vaniljecreme: 15 g majsstivelse",
+    "Vaniljecreme: ½ tsk vanilje",
+    "Vaniljecreme: 15 g smør",
+    "Remonce: 50 g smør",
+    "Remonce: 50 g sukker",
+    "Remonce: 1 tsk majsstivelse",
+    "Remonce: ½ tsk vanilje",
+    "Glasur: 150 g flormelis",
+    "Glasur: 2–3 spsk vand eller mælk",
+    "Glasur: evt. ½ tsk citronsaft"
   ],
+  
+  subIngredients: {
+    Dej: [
+      "25 g gær",
+      "1,5 dl vand",
+      "1,5 dl mælk",
+      "20 g fiberhusk",
+      "1 tsk salt",
+      "25 g sukker",
+      "1½ tsk kardemomme",
+      "40 g smør",
+      "75 g havre- eller boghvedemel",
+      "175 g rød Finax",
+      "evt. 1 æg i dejen",
+      "1 æg til pensling"
+    ],
+    Vaniljecreme: [
+      "2 dl mælk",
+      "1 æggeblomme",
+      "30 g sukker",
+      "15 g majsstivelse",
+      "½ tsk vanilje",
+      "15 g smør"
+    ],
+    Remonce: [
+      "50 g smør",
+      "50 g sukker",
+      "1 tsk majsstivelse",
+      "½ tsk vanilje"
+    ],
+    Glasur: [
+      "150 g flormelis",
+      "2–3 spsk vand eller mælk",
+      "evt. ½ tsk citronsaft"
+    ]
+  },
+  
   steps: [
-    // Lineær version af hele processen
-    "Rør vand, mælk og fiberhusk sammen og lad det stå 5-10 minutter, til det bliver en tyk gel",
-    "Opløs gæren i psyllium-gelen og tilsæt sukker, salt, kardemomme og smør",
-    "Rør mel i og evt. æg, til dejen er blød, let klistret men tydeligt formbar",
-    "Dæk dejen til og lad den hæve 30-45 minutter",
-    "Rør smør og sukker sammen til remoncen, tilsæt majsstivelse og vanilje, evt. på køl 15-20 minutter",
-    "Pisk vaniljecremen: æggeblomme, sukker, majsstivelse, vanilje, varm mælk op, pisk i, kog op, rør smør i, afkøl",
-    "Del dejen i 8-10 stykker, rul let fladt, læg remonce og vaniljecreme i, luk bollerne",
-    "Efterhæv 20-30 minutter, pensl med æg",
-    "Bag ved 180 °C varmluft i 14-16 minutter, lad køle helt af",
-    "Rør glasur af flormelis og vand/mælk, evt. citronsaft, og fordel på de afkølede boller"
+    "Rør vand, mælk og fiberhusk sammen og lad stå 5–10 minutter til tyk gel",
+    "Opløs gæren i psyllium-gelen",
+    "Tilsæt sukker, salt, kardemomme og smør",
+    "Rør mel og evt. æg i, til dejen er blød, let klistret men formbar",
+    "Dæk dejen til og lad hæve 30–45 minutter",
+    "Lav vaniljecremen: Pisk æggeblomme, sukker, majsstivelse og vanilje sammen",
+    "Varm mælken op til lige under kogepunktet og temperér æggemassen",
+    "Kog op under piskning til cremen er tyk og glat, rør smør i og afkøl",
+    "Lav remoncen: Rør smør og sukker luftigt, tilsæt majsstivelse og vanilje, evt. køl 15–20 min",
+    "Del dejen i 8–10 stykker og rul let flade",
+    "Fordel 10 g remonce nederst og 10 g vaniljecreme ovenpå",
+    "Luk bollerne grundigt med samlingen nedad, evt. fugt kanterne med vand",
+    "Efterhæv 20–30 minutter",
+    "Pensl med æg",
+    "Valgfrit: Bag med damp ved at hælde 1–2 dl kogende vand i en varm skål/plade i ovnen og luk hurtigt",
+    "Efter 5–6 minutter lukkes dampen ud, og bollerne bages færdig ved 200 °C"
   ],
+  
   subSteps: {
-    dej: [
-      "Rør vand, mælk og fiberhusk sammen og lad det stå 5-10 minutter, til det bliver en tyk gel",
+    Dej: [
+      "Rør vand, mælk og fiberhusk sammen og lad stå 5–10 minutter",
       "Opløs gæren i psyllium-gelen",
       "Tilsæt sukker, salt, kardemomme og smør",
-      "Rør mel i og evt. æg, til dejen er blød, let klistret men tydeligt formbar",
-      "Dæk dejen til og lad den hæve 30-45 minutter ved stuetemperatur"
+      "Rør mel og evt. æg i",
+      "Dæk dejen til og lad hæve 30–45 minutter"
     ],
-    remonce: [
-      "Rør smør og sukker sammen til en luftig masse",
-      "Tilsæt majsstivelse og vanilje og rør til en ensartet creme",
-      "Sæt evt. remoncen på køl i 15-20 minutter for nemmere håndtering"
-    ],
-    vaniljecreme: [
+    Vaniljecreme: [
       "Pisk æggeblomme, sukker, majsstivelse og vanilje sammen",
-      "Varm mælken op til lige under kogepunktet og pisk den i æggemassen",
-      "Hæld massen tilbage i gryden og kog op under konstant piskning, til cremen er meget tyk",
-      "Tag gryden af varmen, rør smør i og lad cremen køle helt af"
+      "Varm mælken op til lige under kogepunktet",
+      "Temperér æggemassen med lidt varm mælk",
+      "Kog op under piskning til cremen er tyk og glat",
+      "Rør smør i og afkøl helt"
     ],
-    samling: [
-      "Del dejen i 8-10 stykker og rul hvert stykke let fladt",
-      "Læg remonce i midten og kom vaniljecreme ovenpå",
-      "Luk bollerne grundigt og lad dem efterhæve 20-30 minutter",
-      "Pensl bollerne med æg",
-      "Bag ved 180 °C varmluft i 14-16 minutter, til de er let gyldne",
-      "Lad bollerne køle helt af",
-      "Rør flormelis sammen med vand eller mælk og evt. citronsaft til en glat glasur",
-      "Fordel glasuren på de afkølede boller"
+    Remonce: [
+      "Rør smør og sukker luftigt",
+      "Tilsæt majsstivelse og vanilje",
+      "Evt. køl 15–20 min til lettere håndtering"
+    ],
+    Samling: [
+      "Del dejen i 8–10 stykker og rul let flade",
+      "Fordel 10 g remonce nederst og 10 g vaniljecreme ovenpå",
+      "Luk bollerne grundigt med samlingen nedad",
+      "Evt. fugt kanterne med vand",
+      "Efterhæv 20–30 minutter",
+      "Pensl med æg"
+    ],
+    Bagning: [
+      "Valgfrit: Sæt damp ved at hælde 1–2 dl kogende vand i varm skål/plade og luk hurtigt",
+      "Efter 5–6 minutter lukkes dampen ud",
+      "Bag bollerne færdigt ved 200 °C"
+    ],
+    Glasur: [
+      "Bland flormelis med 2–3 spsk vand eller mælk",
+      "Evt. tilsæt ½ tsk citronsaft",
+      "Glasér afkølede fastelavnsboller inden servering"
     ]
   }
-},
+}
 
 
 
